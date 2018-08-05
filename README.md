@@ -1,41 +1,33 @@
-# Role Name
+# CREAM CE role
 
-<!-- A brief description of the role goes here. -->
+This role expresses the UMD CREAM Computing Element.
 
 ## Requirements
 
-<!--
-Any pre-requisites that may not be covered by Ansible itself or the role should be
-mentioned here.
-For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
--->
+None.
 
 ## Role Variables
 
-<!--
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
--->
+None yet.
+
+Variables are found in `defaults/main.yml`
+Put your site variables in `../group_vars/cream-ces.yml` or `vars/main.yml`
 
 ## Dependencies
 
-<!--
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+This role depends on the following roles:
 
-Use https://galaxy.ansible.com/EGI-Foundation/ roles first if possible.
--->
-
+  - EGI-Foundation.umd
+  - EGI-Foundation.voms-client
+  
 ## Example Playbook
 
-<!--
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too.
-Be sure to write the dependencies explicitly.
--->
 
 ```yaml
     - hosts: servers
       roles:
-         - { role: EGI-Foundation.dependency1 }
-         - { role: EGI-Foundation.rolename, x: 42 }
+         - { role: EGI-Foundation.umd, release: 4 }
+         - { role: EGI-Foundation.voms-client }
 ```
 
 ## License
@@ -47,3 +39,4 @@ Apache-2.0
 <!--
 Add the relevant contributors
 -->
+See AUTHORS.md
