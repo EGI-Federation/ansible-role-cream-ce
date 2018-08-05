@@ -1,2 +1,33 @@
 ---
 # defaults file for ansible-role-cream-ce
+prerequisites:
+  redhat:
+    '6':
+      - canl-java-tomcat
+      - cleanup-grid-accounts
+      - bdii
+      - dynsched-generic
+      - glite-ce-cream
+      - glite-info-provider-service
+      - globus-gridftp-server-progs
+      - globus-proxy-utils
+      - glue-schema
+      - kill-stale-ftp
+      - lcg-expiregridmapdir
+      - mariadb
+      - sudo
+    '7':
+      - canl-java-tomcat
+      - cleanup-grid-accounts
+      - bdii
+      - dynsched-generic
+      - glite-ce-cream
+      - glite-info-provider-service
+      - globus-gridftp-server-progs
+      - globus-proxy-utils
+      - glue-schema
+      - kill-stale-ftp
+      - lcg-expiregridmapdir
+      - mariadb
+      - sudo
+

@@ -1,0 +1,6 @@
+---
+- name: Ensure prerequisites
+  package:
+    name: "{{ item }}"
+    state: present
+  loop: "{{ prerequisites['ansible_os_family|lower']['ansible_os_release']] }}"
