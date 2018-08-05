@@ -1,5 +1,7 @@
 # CREAM CE role
 
+[![Build Status](https://travis-ci.org/EGI-Foundation/ansible-role-cream-ce.svg?branch=v0.1.0-rc)](https://travis-ci.org/EGI-Foundation/ansible-role-cream-ce)
+
 This role expresses the UMD CREAM Computing Element.
 
 ## Requirements
